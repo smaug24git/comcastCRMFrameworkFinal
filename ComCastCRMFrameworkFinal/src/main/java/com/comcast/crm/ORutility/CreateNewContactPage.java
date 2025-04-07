@@ -98,7 +98,18 @@ public class CreateNewContactPage {
 		endDate.clear();
 		endDate.sendKeys(edate);
 		savebtn.click();
+		
+	}
+		
+	public void createContactwithORG(String lastname)
+	{
+		lstname.sendKeys(lastname);
+		addorgICON.click();
+		
+		
 
 	}
+
+	
 
 }

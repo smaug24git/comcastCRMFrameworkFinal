@@ -21,7 +21,7 @@ public class ExcelUtility {
 
 	public String getDataFromExcel(String sheetName, int rowNum, int cellNum)
 			throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("./testscriptdata/test data.xls");
+		FileInputStream fis = new FileInputStream("./TestScriptData/test data.xls");
 		Workbook book = WorkbookFactory.create(fis);
 		String data = book.getSheet(sheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
 		book.close();
@@ -30,7 +30,7 @@ public class ExcelUtility {
 	}
 
 	public int getRowCount(String SheetName) throws Throwable {
-		FileInputStream fis = new FileInputStream("./testscriptdata/test data.xls");
+		FileInputStream fis = new FileInputStream("./TestScriptData/test data.xls");
 		Workbook book = WorkbookFactory.create(fis);
 		int rowcount = book.getSheet(SheetName).getPhysicalNumberOfRows(); // getLastRowNum();
 		book.close();
@@ -39,7 +39,7 @@ public class ExcelUtility {
 	}
 
 	public int getCellCount(String SheetName, int rowNum) throws Throwable {
-		FileInputStream fis = new FileInputStream("./testscriptdata/test data.xls");
+		FileInputStream fis = new FileInputStream("./TestScriptData/test data.xls");
 		Workbook book = WorkbookFactory.create(fis);
 		int cellcount = book.getSheet(SheetName).getRow(rowNum).getLastCellNum();// getPhysicalNumberOfCells();
 		book.close();
@@ -48,11 +48,11 @@ public class ExcelUtility {
 	}
 
 	public void setDataIntoExcel(String sheetName, int rowNum, int cellNum, String data) throws Throwable {
-		FileInputStream fis = new FileInputStream("./testscriptdata/test data.xls");
+		FileInputStream fis = new FileInputStream("./TestScriptData/test data.xls");
 		Workbook book = WorkbookFactory.create(fis);
 		book.getSheet(sheetName).getRow(rowNum).createCell(cellNum).setCellValue(data);
 
-		FileOutputStream fos = new FileOutputStream("./testscriptdata/test data.xls");
+		FileOutputStream fos = new FileOutputStream("./TestScriptData/test data.xls");
 		book.write(fos);
 		book.close();
 

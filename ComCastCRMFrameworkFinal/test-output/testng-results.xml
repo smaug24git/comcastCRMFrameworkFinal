@@ -2,16 +2,51 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-07T05:20:02Z" name="Default suite" finished-at="2025-04-07T05:20:04Z" duration-ms="2303">
+  <suite started-at="2025-04-07T10:25:33Z" name="Default suite" finished-at="2025-04-07T10:25:45Z" duration-ms="12612">
     <groups>
+      <group name="RegressionTest">
+        <method signature="CreatecontactwithOrgTest.createContactwithOrgTest()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" name="createContactwithOrgTest" class="grid.CreatecontactwithOrgTest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-04-07T05:20:02Z" name="Default test" finished-at="2025-04-07T05:20:04Z" duration-ms="2303">
-      <class name="grid.Gridsampletest">
-        <test-method signature="sample()[pri:0, instance:grid.Gridsampletest@77128536]" started-at="2025-04-07T10:50:02Z" name="sample" finished-at="2025-04-07T10:50:04Z" duration-ms="2291" status="PASS">
+    <test started-at="2025-04-07T10:25:33Z" name="Default test" finished-at="2025-04-07T10:25:45Z" duration-ms="12612">
+      <class name="grid.CreatecontactwithOrgTest">
+        <test-method is-config="true" signature="beforesuit()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:32Z" name="beforesuit" finished-at="2025-04-07T15:55:33Z" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sample -->
-      </class> <!-- grid.Gridsampletest -->
+        </test-method> <!-- beforesuit -->
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:33Z" name="beforetest" finished-at="2025-04-07T15:55:33Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:33Z" name="beforeclass" finished-at="2025-04-07T15:55:34Z" duration-ms="1058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="loginpage()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:34Z" name="loginpage" finished-at="2025-04-07T15:55:34Z" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+        <test-method signature="createContactwithOrgTest()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:34Z" name="createContactwithOrgTest" finished-at="2025-04-07T15:55:45Z" duration-ms="10273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactwithOrgTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:45Z" name="aftermethod" finished-at="2025-04-07T15:55:45Z" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:45Z" name="afterclass" finished-at="2025-04-07T15:55:45Z" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:45Z" name="aftertest" finished-at="2025-04-07T15:55:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method is-config="true" signature="aftersuit()[pri:0, instance:grid.CreatecontactwithOrgTest@466276d8]" started-at="2025-04-07T15:55:45Z" name="aftersuit" finished-at="2025-04-07T15:55:45Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuit -->
+      </class> <!-- grid.CreatecontactwithOrgTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

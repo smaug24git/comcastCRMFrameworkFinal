@@ -14,7 +14,7 @@ public class FileUtility {
 	public String getDatafromPropertiesFile(String key) throws IOException {
 
 		Properties p = new Properties();
-		p.load(new FileInputStream("./commondata/commondata.properties"));
+		p.load(new FileInputStream("./CommonData/commondata.properties"));
 
 		String data = p.getProperty(key);
 
