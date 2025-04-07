@@ -60,13 +60,14 @@ public class Baseclass {
 	public void beforetest() {
 
 	}
-
+	@Parameters("BROWSER")
 	@BeforeClass(groups = { "SmokeTest", "RegressionTest" })
 
-	public void beforeclass() throws IOException {
+	public void beforeclass(@Optional("chrome") String browser) throws IOException {
 		System.out.println("=====launch Browser=========");
-
-		String BROWSER = System.getProperty("browser",flib.getDatafromPropertiesFile("browser"));
+		
+		String BROWSER = browser;
+		//String BROWSER = System.getProperty(browser,flib.getDatafromPropertiesFile("browser"));
 
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
