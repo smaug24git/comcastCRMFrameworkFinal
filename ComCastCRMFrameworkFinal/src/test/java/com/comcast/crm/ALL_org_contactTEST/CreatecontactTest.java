@@ -1,3 +1,4 @@
+
 package com.comcast.crm.ALL_org_contactTEST;
 
 /**
@@ -153,17 +154,16 @@ public class CreatecontactTest extends Baseclass {
 		UtilityClassObject.getTest().log(Status.INFO, "geneating random numbes");
 
 		JavaUtility jLib = new JavaUtility();
-		int randomNum = jLib.getRandomNumber();
+		int randomNum = jLib.getRandomNumber(); 
 
 		/* step 2: getting data om excel sheet */
 		UtilityClassObject.getTest().log(Status.INFO, "Getting data from excel sheet");
 
 		ExcelUtility eLib = new ExcelUtility();
-		String org_name = eLib.getDataFromExcel("Sheet3", 7, 2).toString() + randomNum;
-		String lastname = eLib.getDataFromExcel("Sheet3", 7, 3).toString();
+		String org_name = eLib.getDataFromExcel("Sheet4", 7, 2).toString() + randomNum;
+		String lastname = eLib.getDataFromExcel("Sheet4", 7, 3).toString();
 
-		/* step 3: Creating Object With support date */
-		UtilityClassObject.getTest().log(Status.INFO, "Creating Object With support date");
+		UtilityClassObject.getTest().log(Status.INFO, "Creating contact with organization");
 
 		HomePage hp = new HomePage(driver);
 		hp.getOrglink().click();
@@ -184,7 +184,7 @@ public class CreatecontactTest extends Baseclass {
 		ContactsPage cp = new ContactsPage(driver);
 		cp.getOrgImg().click();
 		CreateNewContactPage ccp = new CreateNewContactPage(driver);
-		ccp.createContact(lastname);
+		ccp.createContactwithORG(lastname);
 
 		/* switch to child window */
 		UtilityClassObject.getTest().log(Status.INFO, "switch to child window");
