@@ -16,7 +16,7 @@
         				
        			 <configuration>
           			<suiteXmlFiles>
-            			<suiteXmlFile>Orgtest_ST.xml</suiteXmlFile>
+            			<suiteXmlFile>OrgTest_ST.xml</suiteXmlFile>
           			</suiteXmlFiles>
        			 </configuration>
        			 
