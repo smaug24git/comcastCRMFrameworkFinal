@@ -67,7 +67,7 @@ public class Baseclass {
 		System.out.println("=====launch Browser=========");
 		
 		String BROWSER = browser;
-		//String BROWSER = System.getProperty(browser,flib.getDatafromPropertiesFile("browser"));
+		
 
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
